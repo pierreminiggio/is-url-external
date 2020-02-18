@@ -1,0 +1,19 @@
+{
+  "name": "@pierreminiggio/is-url-external",
+  "version": "1.0.0",
+  "description": "Tells if URL is external or not",
+  "main": "main.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pierreminiggio/is-url-external.git"
+  },
+  "author": "Pierre MINIGGIO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pierreminiggio/is-url-external/issues"
+  },
+  "homepage": "https://github.com/pierreminiggio/is-url-external#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
