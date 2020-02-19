@@ -3,7 +3,7 @@ const isUrlExternal = (url) => {
                                       
 	const getDomainOrNull = (url) => {
 		const regExec = domainRegex.exec(url)
-		return regExec.length > 1 ? regExec[1] : null
+		return (regExec !== null && regExec.length > 1) ? regExec[1] : null
  	}
 
  	return getDomainOrNull(location.href) !== getDomainOrNull(url)
