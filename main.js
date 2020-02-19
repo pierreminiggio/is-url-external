@@ -1,11 +1,12 @@
 const isUrlExternal = (url) => {
-  var domainRegex = /https?:\/\/((?:[\w\d]+\.)+[\w\d]{2,})/i
+	const domainRegex = /https?:\/\/((?:[\w\d]+\.)+[\w\d]{2,})/i
                                       
-  const getDomain = (url) => {
-   	return domainRegex.exec(url)[1]  
-  }
+	const getDomainOrNull = (url) => {
+		const regExec = domainRegex.exec(url)
+		return regExec.length > 1 ? regExec[1] : null
+ 	}
 
-  return getDomain(location.href) !== getDomain(url)
+ 	return getDomainOrNull(location.href) !== getDomainOrNull(url)
 }
 
 module.exports = isUrlExternal
